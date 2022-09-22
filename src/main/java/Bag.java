@@ -98,8 +98,9 @@ public abstract class Bag {
         if(numberOfContents == 0){
             return null;
         }else{
+            String item = this.contents[this.numberOfContents];
             this.numberOfContents -= 1;
-            return this.contents[this.numberOfContents];
+            return item;
         }
     }
 
